@@ -13,9 +13,9 @@ namespace _01._Tiles_Master
         {
             static void Main(string[] args)
             {
-                Stack<int> whites = new Stack<int>(Console.ReadLine().Split(" ").Select(int.Parse).ToList());
+                Stack<int> whites = new Stack<int>(Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList());
 
-                Queue<int> grays = new Queue<int>(Console.ReadLine().Split(" ").Select(int.Parse).ToList());
+                Queue<int> grays = new Queue<int>(Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList());
                 int oven = 0;
                 int sink = 0;
                 int Countertop = 0;
